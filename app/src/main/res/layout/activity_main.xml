@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="408dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="174dp"
+        android:background="@color/blue"
+        android:text="Hitung Keliling dan Luas"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_persegi"
+        android:layout_width="172dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="25dp"
+        android:text="PERSEGI"
+        android:onClick="bukaPersegi"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_segitiga"
+        android:layout_width="172dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="15dp"
+        android:text="SEGITIGA"
+        android:onClick="bukaSegitiga"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_persegi" />
+
+    <Button
+        android:id="@+id/btn_lingkaran"
+        android:layout_width="173dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="15dp"
+        android:text="LINGKARAN"
+        android:onClick="bukaLingkaran"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_segitiga" />
+</androidx.constraintlayout.widget.ConstraintLayout>
